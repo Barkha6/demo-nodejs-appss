@@ -19,7 +19,7 @@ pipeline {
     stage('Unit Tests') {
       steps{
         script {
-          sh 'yum npm install'
+          sh 'npm install'
 	  sh 'npm test -- --watchAll=false'
         }
       }
